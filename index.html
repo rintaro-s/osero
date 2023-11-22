@@ -292,7 +292,7 @@ return new A(e,"base64").toString("binary")}:"object"==typeof t.base64js?functio
       scaffolding.setAccentColor("#ff4c4c");
 
       try {
-        scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:928498642"));
+        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "928498642"));
       } catch (error) {
         console.error(error);
       }
